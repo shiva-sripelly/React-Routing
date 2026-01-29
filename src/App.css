@@ -1,0 +1,93 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #0f172a;
+  padding: 15px;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Links */
+nav a {
+  color: #cbd5f5;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+nav a:hover {
+  background-color: #1e293b;
+  color: #ffffff;
+}
+
+/* ACTIVE LINK */
+nav a.active {
+  background-color: #2563eb;
+  color: white;
+  font-weight: bold;
+}
+
+/* Page layout */
+.page {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Page colors */
+.home {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.about {
+  background-color: #ecfeff;
+  color: #155e75;
+}
+
+.contact {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+/* Company page background */
+.company-page {
+  min-height: 300px;
+  padding: 40px;
+  background-image: url("./assets/company-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  color: white;
+
+  /* overlay effect */
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+/* Text styling */
+.company-page h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.company-page p {
+  font-size: 18px;
+}
